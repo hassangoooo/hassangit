@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>Bootstrap</title>
+  <style>
+    .card {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Compagny</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ruches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stats</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Container body -->
+  <main class="container-lg">
+    <!-- 1er ligne avec le formulaire + la card -->
+    <section class="row mt-3">
+      <!-- Colonne avec le formulaire + photo -->
+      <article class="col-md-8">
+        <!-- ligne image + 2 input text -->
+        <section class="row">
+          <!-- colonne image -->
+          <article class="col-md-4">
+            <img src="https://placehold.co/200" alt="image rond" class="rounded-circle mx-auto d-block ">
+          </article>
+          <!-- colonne 2 input -->
+          <article class="col-md-8 mt-2">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Template name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Aurélien est un casse couille">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Object</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+
+          </article>
+        </section>
+        <!-- ligne textearea -->
+        <section class="row mt-3">
+          <!-- colonne textarea -->
+          <article class="col-md-12">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="11  "></textarea>
+            </div>
+          </article>
+        </section>
+      </article>
+      <!-- colonne avec la carte -->
+      <article class="col-md-4">
+        <div class="card">
+          <img src="https://placehold.co/600x400" class="card-img-top" alt="image super">
+          <div class="card-body">
+            <h5 class="card-title">Thumbnail title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae quasi
+              voluptatum eius debitis magni veniam consequatur dolor ratione veritatis explicabo culpa esse ut fuga
+              sequi officiis, quas architecto libero!</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-secondary">Go somewhere</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="row mt-2">
+      <!-- colonne de gauche -->
+      <article class="col-md-4">
+        <label for="" class="text-sm">Message type</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <label for="" class="text-sm mt-2">Send to group</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="flexCheckboxDefault1">
+          <label class="form-check-label" for="flexCheckboxDefault1">
+            Default checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="flexCheckboxDefault2" checked>
+          <label class="form-check-label" for="flexCheckboxDefault2">
+            Default checked checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="flexCheckboxDefault3">
+          <label class="form-check-label" for="flexCheckboxDefault3">
+            Default checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="flexCheckboxDefault4" checked>
+          <label class="form-check-label" for="flexCheckboxDefault4">
+            Default checked checkbox
+          </label>
+        </div>
+        <div class="d-grid gap-2 d-md-block mt-3">
+          <button class="btn btn-primary" type="button">Button</button>
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+      </article>
+      <!-- colonne de droite -->
+      <article class="offset-md-4 col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <label for="">Je sais plus</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <label for="" class="mt-2">Set Type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label badge text-bg-primary" for="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+              <label class="form-check-label badge text-bg-info" for="flexRadioDefault2">
+                Default checked radio 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label badge text-bg-success" for="flexRadioDefault3">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" >
+              <label class="form-check-label badge text-bg-warning" for="flexRadioDefault4">
+                Default checked radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+              <label class="form-check-label badge text-bg-danger" for="flexRadioDefault5">
+                Default radio
+              </label>
+            </div>
+            <div class="d-grid gap-2 d-md-block mt-3">
+              <button class="btn btn-danger" type="button">Supprimer</button>
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
